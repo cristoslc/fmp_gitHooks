@@ -4,7 +4,7 @@ Hooks to simplify working with FileMaker in git repositories. See the [git hooks
 ##Done
 ### pre-commit
  * quit FileMaker Pro Advanced
- * re-add any files that have already been added (to make sure they get added from a closed state)
+ * re-stage any files that have already been staged (to make sure they get committed from a closed state)
 
 ##TODO
 
