@@ -8,5 +8,5 @@ sleep 5
 commitFiles=$(git ls-files --full-name -om)
 echo "$commitFiles"
 while read -r line; do
-    git add $line
+    git add "$line"
 done <<< "$commitFiles"
