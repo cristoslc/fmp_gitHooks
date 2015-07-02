@@ -5,7 +5,7 @@ osascript -e 'quit app "FileMaker Pro Advanced"'
 
 # Now that FileMaker has quit, re-stage any files that were already staged so that the CLOSED versions are committed.
 sleep 5
-commitFiles=$(git ls-files --full-name -om)
+commitFiles=$(git ls-files --full-name -m)
 echo "$commitFiles"
 while read -r line; do
     git add "$line"
